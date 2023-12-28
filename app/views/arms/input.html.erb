@@ -1,0 +1,19 @@
+<h1>Рубежный контроль №2. Акимова Мария ИУ6-34Б</h1>
+<p>Вариант 33. Дан массив чисел arr_k. Переписать в новый
+массив все элементы исходного массива, кратные 9,
+и определить их сумму.</p>
+<h3>Введите числа через пробел без дополнительных знаков! При пустом вводе будет введен массив по умолчанию: 1  36 9 27 3 -2 -18</h3>
+<div class="form">
+  <%= form_tag("/arms/output", method: "get") do %>
+  <p>Введите массив</p>
+  <%= text_field_tag(:val, "", class: "form-control mb-2", placeholder: "1  36 9 27 3 -2 -18") %>
+  <%= submit_tag "Ввод!", class: "btn btn-light", onclick: "validateForm()" %>
+<% end %>
+
+<% if flash[:alert] %>
+  <div class="alert alert-danger" role="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+</div>
+
