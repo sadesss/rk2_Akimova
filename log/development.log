@@ -1,0 +1,1110 @@
+Started GET "/" for 127.0.0.1 at 2023-12-28 15:48:26 +0300
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 383)
+Completed 200 OK in 20ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 7460)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 15:49:43 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 286)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1073)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 15:51:05 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 15:51:06 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/maria/.rvm/gems/ruby-3.1.2/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 221)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 15:56:16 +0300
+  
+SyntaxError (/home/maria/Documents/BMSTU/3 sem/Языки интернет-программирования/rks/rrk2/config/routes.rb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+config/routes.rb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-12-28 15:56:58 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 2.2ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 193.1ms | Allocations: 232017)
+Completed 200 OK in 195ms (Views: 194.2ms | ActiveRecord: 0.0ms | Allocations: 232920)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 15:58:35 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2845)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 58900)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms | Allocations: 59732)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 16:05:17 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.7ms | Allocations: 840)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 56809)
+Completed 200 OK in 21ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 57639)
+
+
+Started GET "/arms/output?val=2+3+6+9+1+9&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:05:26 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"2 3 6 9 1 9", "commit"=>"Go!"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3487)
+
+
+  
+NameError (undefined local variable or method `num' for #<ArmsController:0x00000000017b10>
+
+      @out_arr = input(input_str).select { num.is_a?(Numeric) && num % 9 == 0}
+                                           ^^^):
+  
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/" for 127.0.0.1 at 2023-12-28 16:06:09 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 843)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 56823)
+Completed 200 OK in 27ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 57655)
+
+
+Started GET "/arms/output?val=2+3+6+9+1+9&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:06:11 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"2 3 6 9 1 9", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.3ms | Allocations: 257)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 9135)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 9482)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:06:22 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.1ms | Allocations: 479)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9001)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 9247)
+
+
+Started GET "/arms/output?val=&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:06:25 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 8945)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 9213)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:06:29 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 488)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 9010)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 9256)
+
+
+Started GET "/arms/output?val=&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:06:45 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 8930)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 9194)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:06:47 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 9005)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 9251)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:10:22 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.9ms | Allocations: 863)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 56842)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 57674)
+
+
+Started GET "/arms/output?val=2+3+6+9+1+9&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:10:27 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"2 3 6 9 1 9", "commit"=>"Go!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1824)
+
+
+  
+NoMethodError (undefined method `is_f?' for 2:Integer
+
+      @out_arr = input(input_str).select {|num| num.is_f?(Numeric) && num % 9 == 0}
+                                                   ^^^^^^
+Did you mean?  is_a?):
+  
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:10:36 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 56831)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 57663)
+
+
+Started GET "/arms/output?val=2%2C+3%2C+6+9+1+9&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:11:09 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"2, 3, 6 9 1 9", "commit"=>"Go!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 631)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 16:11:09 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 521)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 9043)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 9301)
+
+
+Started GET "/arms/output?val=6+7+8&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:11:16 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"6 7 8", "commit"=>"Go!"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2153)
+
+
+  
+NoMethodError (undefined method `is_а?' for 6:Integer
+Did you mean?  is_a?):
+  
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:11:24 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.8ms | Allocations: 475)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 9009)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 9256)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:11:24 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.4ms | Allocations: 481)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 9003)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 9248)
+
+
+Started GET "/arms/output?val=8+7+6&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:11:37 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"8 7 6", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 270)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 56725)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 57813)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:11:42 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 2.3ms | Allocations: 724)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 9251)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 9513)
+
+
+Started GET "/arms/output?val=%D1%80%D0%BE%D0%BB+9&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:12:28 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"рол 9", "commit"=>"Go!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 551)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 16:12:28 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 504)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 9026)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 9272)
+
+
+Started GET "/arms/output?val=7+6+5+9.9+1&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:13:15 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"7 6 5 9.9 1", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 8926)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 9191)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:13:17 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 9021)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 9267)
+
+
+Started GET "/arms/output?val=&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:13:20 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 8932)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 9196)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:13:23 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.0ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 9034)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 9282)
+
+
+Started GET "/arms/output?val=4+5+9%2C9+1&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:14:51 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"4 5 9,9 1", "commit"=>"Go!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 530)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 16:14:51 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 9014)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 9260)
+
+
+Started GET "/arms/output?val=6+9.9+0&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:19:15 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"6 9.9 0", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 8957)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 9221)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:19:21 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.8ms | Allocations: 481)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 9006)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 9252)
+
+
+Started GET "/arms/output?val=&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:20:56 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.5ms | Allocations: 280)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 56710)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 57805)
+
+
+Started GET "/arms/output?val=&commit=Go%21" for 127.0.0.1 at 2023-12-28 16:21:31 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Go!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 56728)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 57823)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:21:32 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.7ms | Allocations: 741)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 9265)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 9528)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:25:13 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.9ms | Allocations: 858)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 56861)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 57693)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:25:16 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.5ms | Allocations: 213)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 9114)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 9462)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:25:19 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.8ms | Allocations: 471)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 9006)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 9254)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:25:21 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8929)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 9196)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:25:23 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 486)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 9009)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 9255)
+
+
+Started GET "/arms/output?val=9.9&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:25:28 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"9.9", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 8951)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 9209)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:25:30 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 486)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 9013)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 9259)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:27:27 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.5ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 56682)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 57780)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:27:29 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.8ms | Allocations: 734)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 9261)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 9524)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:29:34 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.8ms | Allocations: 868)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 56894)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 57726)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:29:35 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.3ms | Allocations: 217)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 9119)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 9467)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:29:37 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.9ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 9016)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 9263)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:29:59 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 566)
+
+
+  
+TypeError (class or module required):
+  
+app/controllers/arms_controller.rb:16:in `is_a?'
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:30:01 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 488)
+
+
+  
+TypeError (class or module required):
+  
+app/controllers/arms_controller.rb:16:in `is_a?'
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:30:20 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 501)
+
+
+  
+TypeError (class or module required):
+  
+app/controllers/arms_controller.rb:16:in `is_a?'
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:30:39 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 559)
+
+
+  
+TypeError (class or module required):
+  
+app/controllers/arms_controller.rb:16:in `is_a?'
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:31:15 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 275)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 56707)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 57803)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:31:17 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 2.7ms | Allocations: 743)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 9267)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 9529)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:31:18 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 8931)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 9196)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:31:20 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 9011)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 9257)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:31:54 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1801)
+
+
+  
+NoMethodError (undefined method `is_a' for 1:Integer
+
+      @out_arr = input(input_str).select {|num| num.is_a? num.is_a % 9 == 0}
+                                                             ^^^^^
+Did you mean?  is_a?):
+  
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:32:04 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.7ms | Allocations: 850)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 56840)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 57673)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:32:05 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.1ms | Allocations: 217)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 9094)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 9440)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:32:51 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1815)
+
+
+  
+NoMethodError (undefined method `zero' for 1:Integer
+
+      @out_arr = input(input_str).select {|num| num.is_a?(Numeric) && (num % 9).zero}
+                                                                               ^^^^^
+Did you mean?  zero?):
+  
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:34:06 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.5ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 56719)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 57812)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:34:07 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 2.5ms | Allocations: 738)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 9262)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 9524)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:34:12 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8934)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 9200)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:35:51 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 56705)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 57802)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:35:52 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 2.7ms | Allocations: 749)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 9273)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 9536)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:35:53 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 8936)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 9202)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:35:54 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 9007)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 9254)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:37:05 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.8ms | Allocations: 859)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 56874)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 57707)
+
+
+Started GET "/arms/output?val=%D1%8B%D0%B2%D1%8B&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:37:09 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"ывы", "commit"=>"Ввод!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 589)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 16:37:09 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.9ms | Allocations: 511)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 9034)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 9292)
+
+
+Started GET "/arms/output?val=45&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:37:13 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"45", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.4ms | Allocations: 203)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 9103)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 9424)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:37:17 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 471)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8997)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 9243)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 16:37:21 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 8963)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 9226)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 16:37:23 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 471)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 8993)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 9240)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:00:05 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2066)
+  Rendered layout layouts/application.html.erb (Duration: 167.6ms | Allocations: 126649)
+Completed 200 OK in 183ms (Views: 181.7ms | ActiveRecord: 0.0ms | Allocations: 129222)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:00:09 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 545)
+
+
+  
+TypeError (false can't be coerced into Integer):
+  
+app/controllers/arms_controller.rb:16:in `%'
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:00:25 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.5ms | Allocations: 562)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 9217)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 9499)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:00:26 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 498)
+
+
+  
+TypeError (false can't be coerced into Integer):
+  
+app/controllers/arms_controller.rb:16:in `%'
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:00:43 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.5ms | Allocations: 478)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 9013)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 9261)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:00:45 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 490)
+
+
+  
+TypeError (false can't be coerced into Integer):
+  
+app/controllers/arms_controller.rb:16:in `%'
+app/controllers/arms_controller.rb:16:in `block in output'
+app/controllers/arms_controller.rb:16:in `select'
+app/controllers/arms_controller.rb:16:in `output'
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:02:52 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.9ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 56831)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 57663)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:02:53 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9151)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 9500)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:03:17 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.0ms | Allocations: 478)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 9004)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 9252)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:03:19 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 8935)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 9201)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:03:20 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 475)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 8997)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 9246)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:04:51 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.5ms | Allocations: 493)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 9015)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 9261)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:05:11 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2075)
+  Rendered layout layouts/application.html.erb (Duration: 100.3ms | Allocations: 126474)
+Completed 200 OK in 118ms (Views: 116.2ms | ActiveRecord: 0.0ms | Allocations: 129047)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:05:13 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.4ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 9377)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 9804)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:05:14 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 509)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 9031)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 9280)
+
+
+Started GET "/arms/output?val=%D1%88%D1%89&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:05:17 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"шщ", "commit"=>"Ввод!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 630)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 17:05:17 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 9021)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 9270)
+
+
+Started GET "/arms/output?val=45&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:05:20 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"45", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 8954)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 9219)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:05:22 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 8996)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 9244)
+
+
+Started GET "/arms/output?val=0&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:05:26 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"0", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 8946)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 9206)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:05:27 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.9ms | Allocations: 483)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 9019)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 9269)
+
+
+Started GET "/arms/output?val=1&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:05:30 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"1", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 8923)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 9184)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:05:32 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 9001)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 9249)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:10:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 120.1ms | Allocations: 126590)
+Completed 200 OK in 137ms (Views: 135.1ms | ActiveRecord: 0.0ms | Allocations: 129163)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:10:52 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.8ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 9371)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 9798)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:10:53 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 494)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 9016)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 9265)
+
+
+Started GET "/arms/output?val=sf&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:10:55 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"sf", "commit"=>"Ввод!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 634)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 17:10:55 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 516)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 9038)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 9287)
+
+
+Started GET "/arms/output?val=56%3F+6&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:11:00 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"56? 6", "commit"=>"Ввод!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 536)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 17:11:00 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 537)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 9059)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 9308)
+
+
+Started GET "/arms/output?val=8888+++++9&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:11:06 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"8888     9", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 8951)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 9213)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:11:08 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.5ms | Allocations: 483)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 9005)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 9253)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:14:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2078)
+  Rendered layout layouts/application.html.erb (Duration: 108.9ms | Allocations: 126594)
+Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.0ms | Allocations: 129167)
+
+
+Started GET "/arms/output?val=&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:14:23 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 1.4ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 9380)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 9807)
+
+
+Started GET "/arms/input" for 127.0.0.1 at 2023-12-28 17:15:13 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 1.1ms | Allocations: 509)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 9031)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 9280)
+
+
+Started GET "/arms/output?val=sddsf+rtt+656%3F+7&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:15:23 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"sddsf rtt 656? 7", "commit"=>"Ввод!"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 626)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-28 17:15:23 +0300
+Processing by ArmsController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering arms/input.html.erb within layouts/application
+  Rendered arms/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 516)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 9038)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 9287)
+
+
+Started GET "/arms/output?val=1+2+3+-9+1&commit=%D0%92%D0%B2%D0%BE%D0%B4%21" for 127.0.0.1 at 2023-12-28 17:16:46 +0300
+Processing by ArmsController#output as HTML
+  Parameters: {"val"=>"1 2 3 -9 1", "commit"=>"Ввод!"}
+  Rendering layout layouts/application.html.erb
+  Rendering arms/output.html.erb within layouts/application
+  Rendered arms/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 8948)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 9213)
+
+
+Started GET "/ru" for 127.0.0.1 at 2023-12-28 17:20:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ru"):
+  
